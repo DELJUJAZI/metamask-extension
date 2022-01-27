@@ -978,7 +978,6 @@ export default class ConfirmTransactionBase extends Component {
   render() {
     const { t } = this.context;
     const {
-      actionKey,
       fromName,
       fromAddress,
       toName,
