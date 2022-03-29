@@ -663,9 +663,8 @@ export default class TransactionController extends EventEmitter {
 
     // validate
     const normalizedTxParams = txUtils.normalizeTxParams(txParams);
-    const eip1559Compatibility = await this.getEIP1559Compatibility();
 
-    txUtils.validateTxParams(normalizedTxParams, eip1559Compatibility);
+    txUtils.validateTxParams(normalizedTxParams);
 
     /**
      * `generateTxMeta` adds the default txMeta properties to the passed object.
